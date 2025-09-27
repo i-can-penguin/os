@@ -77,7 +77,7 @@ Key: Green=GPIO, Blue=RM_IO, Red=Power, Black=GND
 
 ```
 RMIO pins and GPIO pins
-Other GPIO where larger than 32 still require you to subract 32
+GPIO pins larger than 32 still require you to subract 32
 
                 Armsom Forge1 RK3506J
                      + -USB- +
