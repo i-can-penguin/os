@@ -64,6 +64,9 @@ Luckfox Lyra boards Specifications
 nmcli connection add type gsm ifname '*' apn 'internet' connection.autoconnect yes
 nmcli conn up gsm --ask
 
+route
+route del default gw x.x.x.x dev end1
+
 nmcli dev status
 DEVICE    TYPE      STATE                   CONNECTION         
 end1      ethernet  connected               Wired connection 2 
