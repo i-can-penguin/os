@@ -59,6 +59,43 @@ Luckfox Lyra boards Specifications
 
 <img width="1044" height="810" alt="Screenshot_20250811_221648" src="https://github.com/user-attachments/assets/b02b38e1-ece0-4d57-887b-de53b5d9d7d0" />
 
+4G LTE howto
+```
+nmcli connection add type gsm ifname '*' apn 'internet' connection.autoconnect yes
+nmcli conn up gsm --ask
+
+root@luckfox:~# lsusb
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 001 Device 002: ID 1a86:8091 QinHeng Electronics USB HUB
+Bus 001 Device 004: ID 1e0e:9001 Qualcomm / Option SimTech, Incorporated
+Bus 001 Device 005: ID a69c:88dc AICSemi AIC8800DC
+
+root@luckfox:~# lsusb -tv
+/:  Bus 001.Port 001: Dev 001, Class=root_hub, Driver=dwc2/1p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+    |__ Port 001: Dev 002, If 0, Class=Hub, Driver=hub/4p, 480M
+        ID 1a86:8091 QinHeng Electronics 
+        |__ Port 001: Dev 005, If 0, Class=Wireless, Driver=btusb, 480M
+            ID a69c:88dc  
+        |__ Port 001: Dev 005, If 1, Class=Wireless, Driver=btusb, 480M
+            ID a69c:88dc  
+        |__ Port 001: Dev 005, If 2, Class=Vendor Specific Class, Driver=aic8800_fdrv, 480M
+            ID a69c:88dc  
+        |__ Port 002: Dev 004, If 0, Class=Vendor Specific Class, Driver=[none], 480M
+            ID 1e0e:9001 Qualcomm / Option 
+        |__ Port 002: Dev 004, If 1, Class=Vendor Specific Class, Driver=[none], 480M
+            ID 1e0e:9001 Qualcomm / Option 
+        |__ Port 002: Dev 004, If 2, Class=Vendor Specific Class, Driver=[none], 480M
+            ID 1e0e:9001 Qualcomm / Option 
+        |__ Port 002: Dev 004, If 3, Class=Vendor Specific Class, Driver=[none], 480M
+            ID 1e0e:9001 Qualcomm / Option 
+        |__ Port 002: Dev 004, If 4, Class=Vendor Specific Class, Driver=[none], 480M
+            ID 1e0e:9001 Qualcomm / Option 
+        |__ Port 002: Dev 004, If 5, Class=Vendor Specific Class, Driver=[none], 480M
+            ID 1e0e:9001 Qualcomm / Option 
+```
+
+
 Luckfox Lyra pinout
 
 https://wiki.luckfox.com/Luckfox-Lyra/Pinout/
