@@ -171,7 +171,7 @@
 };
 
 &usb20_otg1 {
-	dr_mode = "otg";
+	dr_mode = "host";
 	status = "okay";
 };
 
