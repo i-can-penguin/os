@@ -80,6 +80,8 @@ end0      ethernet  unavailable             --
 <img width="839" height="805" alt="image" src="https://github.com/user-attachments/assets/44470aee-309c-4d59-802e-39911f24f157" />
 
 ```
+https://www.waveshare.com/sma-to-ipex-cable.htm?sku=21120
+
 Get Location (Guess you should really connect up a GPS antenna, but it not supplied) IPEX-4 to SMA
 mmcli -m 0 --location-status
   ------------------------
