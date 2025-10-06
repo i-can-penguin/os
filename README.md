@@ -76,7 +76,7 @@ cdc-wdm0  gsm       connected               gsm
 lo        loopback  connected (externally)  lo                 
 end0      ethernet  unavailable             --
 
-Get Location (Guess you should really connect up a GPS antenna, but it not supplied)
+Get Location (Guess you should really connect up a GPS antenna, but it not supplied) IPEX-4 to SMA
 mmcli -m 0 --location-status
   ------------------------
   Location | capabilities: 3gpp-lac-ci, gps-raw, gps-nmea, gps-unmanaged, agps-msa, 
