@@ -1,4 +1,5 @@
-# rk3506-ubuntu
+# os
+
 <img width="1024" height="576" alt="image" src="https://github.com/user-attachments/assets/6295b83a-7a8e-4d2b-b0ba-6c5242364663" />
 
 
@@ -299,9 +300,9 @@ libmpc-dev bc python-is-python3 python2
 sudo ln -sf /usr/bin/python2 /usr/bin/python 
 
 [build instructions]
-git clone https://github.com/i-can-penguin/rk3506-ubuntu
+git clone https://github.com/i-can-penguin/os
 
-cd rk3506-ubuntu/device/rockchip/.chips/rk3506
+cd os/device/rockchip/.chips/rk3506
 ln -s .chips/rk3506 ../../rk3506
 ln -s .chips/rk3506 ../../.chip
 cd ../../../../
