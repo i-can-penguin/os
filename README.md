@@ -1,5 +1,11 @@
 # device
 
+Changing bootargs fbcon rotate will rotate the display framebuffer
+
+```
+bootargs = "earlycon=uart8250,mmio32,0xff0a0000 console=tty1 console=ttyFIQ0 fbcon=rotate:3 root=/dev/mmcblk0p3 rootfstype=ext4 rootwait snd_aloop.index=7 snd_aloop.use_raw_jiffies=1";
+```
+
 # i.can.penguin Kids Prototype
 
 <img width="3065" height="1848" alt="image" src="https://github.com/user-attachments/assets/81d64604-d8e7-4219-a235-68af281ee8b7" />
